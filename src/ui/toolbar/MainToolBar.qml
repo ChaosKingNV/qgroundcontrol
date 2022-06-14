@@ -186,15 +186,6 @@ Item {
                     }
                 }
 
-                Button {
-                    id: logoutButton
-                    width: height
-                    text: "Logout"
-                    Layout.alignment: Qt.AlignRight
-                    onClicked: {
-
-                    }
-                }
 
 
                 Item {
@@ -224,6 +215,19 @@ Item {
                 source:             "/toolbar/MainToolBarIndicators.qml"
                 visible:            activeVehicle && !communicationLost
             }
+        }
+
+
+    }
+
+    Button {
+        id: logoutButton
+        width: 100
+        text: "Logout"
+        anchors.right: parent.right
+        anchors.rightMargin: 300
+        onClicked: {
+
         }
     }
 
