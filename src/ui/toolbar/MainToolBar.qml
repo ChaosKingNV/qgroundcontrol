@@ -186,6 +186,17 @@ Item {
                     }
                 }
 
+                Button {
+                    id: logoutButton
+                    width: height
+                    text: "Logout"
+                    Layout.alignment: Qt.AlignRight
+                    onClicked: {
+
+                    }
+                }
+
+
                 Item {
                     Layout.fillHeight:  true
                     width:              ScreenTools.defaultFontPixelWidth / 2
@@ -350,5 +361,6 @@ Item {
             color:                  qgcPal.colorRed
         }
     }
+
 
 }
